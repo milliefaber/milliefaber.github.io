@@ -1,1 +1,229 @@
+/*css: cascading stylesheet*/
+
+@font-face {
+    font-family:pixelated-times-new-roman;
+    src: url("../P2fonts/pixelated-times-new-roman.ttf");
+  }
+  
+  body {
+    background-color: rgb(255, 230, 4);
+    margin-top: 2%;
+  }
+  
+  p {
+    font-family:pixelated-times-new-roman;
+  }
+
+  h1 {
+    position: relative;
+    font-size: 85pt;
+    text-align: center;
+    color: #e20724;
+    font-family: pixelated-times-new-roman;
+    padding: none;
+  }
+
+  h1:hover {
+    animation: heartbeat .8s infinite;
+	transform-origin: center;
+  }
+
+ @keyframes heartbeat {
+    0% {
+        transform: scale(1);
+      }
+      25% {
+        transform: scale(1.1);
+      }
+      40% {
+        transform: scale(1);
+      }
+      60% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+ }
+
+  h3 {
+    position: relative;
+    font-size: 60pt;
+    text-align: center;
+    color: rgb(0, 180, 0);
+    font-family: pixelated-times-new-roman;
+  }
+  
+  h3:hover {
+    animation: heartbeat .8s infinite;
+	transform-origin: center;
+  }
+
+ @keyframes heartbeat {
+    0% {
+        transform: scale(1);
+      }
+      25% {
+        transform: scale(1.1);
+      }
+      40% {
+        transform: scale(1);
+      }
+      60% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+ }
+
+  .lyricsA {
+    position: relative;
+    font-size: 45pt;
+    text-align: center;
+    color: #0754e4;
+  }
+ 
+ .lyricsA:hover {
+    animation: heartbeat .8s infinite;
+	transform-origin: center;
+  }
+
+ @keyframes heartbeat {
+    0% {
+        transform: scale(1);
+      }
+      25% {
+        transform: scale(1.1);
+      }
+      40% {
+        transform: scale(1);
+      }
+      60% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+ }
+
+ .lyricsB {
+    position: relative;
+    font-size: 45pt;
+    text-align: center;
+    color: #0754e4;
+  }
+ 
+ .lyricsB:hover {
+    animation: heartbeat .8s infinite;
+	transform-origin: center;
+  }
+
+ @keyframes heartbeat {
+    0% {
+        transform: scale(1);
+      }
+      25% {
+        transform: scale(1.1);
+      }
+      40% {
+        transform: scale(1);
+      }
+      60% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+ }
+
+ .lyricsC {
+    position: relative;
+    font-size: 45pt;
+    text-align: center;
+    color: #0754e4;
+  }
+ 
+ .lyricsC:hover {
+    animation: heartbeat .8s infinite;
+	transform-origin: center;
+  }
+
+ @keyframes heartbeat {
+    0% {
+        transform: scale(1);
+      }
+      25% {
+        transform: scale(1.1);
+      }
+      40% {
+        transform: scale(1);
+      }
+      60% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+ }
+
+ .lyricsD {
+    position: relative;
+    font-size: 45pt;
+    text-align: center;
+    color: #0754e4;
+  }
+ 
+ .lyricsD:hover {
+    animation: heartbeat .8s infinite;
+	transform-origin: center;
+  }
+
+ @keyframes heartbeat {
+    0% {
+        transform: scale(1);
+      }
+      25% {
+        transform: scale(1.1);
+      }
+      40% {
+        transform: scale(1);
+      }
+      60% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+ }
+
+ .lyricsE {
+    position: relative;
+    font-size: 45pt;
+    text-align: center;
+    color: #0754e4;
+  }
+ 
+ .lyricsE:hover {
+    animation: heartbeat .8s infinite;
+	transform-origin: center;
+  }
+
+ @keyframes heartbeat {
+    0% {
+        transform: scale(1);
+      }
+      25% {
+        transform: scale(1.1);
+      }
+      40% {
+        transform: scale(1);
+      }
+      60% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+ }
 
