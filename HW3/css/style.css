@@ -1,0 +1,90 @@
+/*css: cascading stylesheet*/
+
+@font-face {
+    font-family: bennet-banner;
+    src: url("https://use.typekit.net/yfw3hof.css");
+  }
+
+  .link {
+    text-align: center;
+    font-size: 16pt;
+    font-family: bennet-banner, sans-serif;
+    color: #C7384C;
+  }
+  
+  .grid {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 160px 160px 160px 160px;
+    grid-template-rows: 160px 160px 160px 160px 160px;
+    justify-content: center;
+    gap: 20px 75px;
+  }
+
+  .grid-item {
+    font-size: 3rem;
+    text-align: center;
+    padding: 4rem;
+  }
+  .grid-item1 {
+    background: #EBD75A;
+  }
+  .grid-item2 {
+    background: #0697DA;
+  }
+  .grid-item3 {
+    background: #C7384C;
+  }
+  .grid-item4 {
+    background: #0697DA;
+  }
+  .grid-item5 {
+    background: #C7384C;
+  }
+  .grid-item6 {
+    background: #EBD75A;
+  }
+  .grid-item7 {
+    background: #E8E7E1;
+  }
+  .grid-item8 {
+    background: #0697DA;
+  }
+  .grid-item9 {
+    background: #E8E7E1;
+  }
+  .grid-item10 {
+      background: #EBD75A;
+  }
+  .grid-item11 {
+    background: #E8E7E1;
+  }
+  .grid-item12 {
+    background: #C7384C;
+  }
+  .grid-item13 {
+    background: #31333E;
+  }
+  .grid-item14 {
+    background: #0697DA;
+  }
+  .grid-item15 {
+    background: #31333E;
+  }
+  .grid-item16 {
+    background: #EBD75A;
+  }
+  .grid-item17 {
+    background: #31333E;
+  }
+  .grid-item18 {
+    background: #C7384C;
+  }
+  .grid-item19 {
+      background: #31333E;
+  }
+  .grid-item20 {
+    background: #E8E7E1;
+  }
+
+
