@@ -1,0 +1,99 @@
+@import url("https://use.typekit.net/jly4xrt.css");
+body {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-style: normal;
+  background: #91FF04;
+}
+
+h1 {
+  color: #443621;
+  font-size: 4.75rem;
+  text-align: center;
+  margin: 1%;
+  margin-bottom: 3%;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #443621; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 6s steps(40, end),
+    blink-caret .75s step-end infinite;
+ }
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #443621; }
+}
+
+ .hunts-point {
+  height: 48rem;
+  max-width: 100%;
+  margin-left: 5%;
+  margin-right: 2%;
+  position: relative;
+}
+
+.hunts-point img {
+  max-height: 100%;
+  width: 30%;
+  margin: 1%;
+  transform: translate3d(0, 0, 0);
+}
+
+.upper-east-side {
+   display: none;
+  }
+  
+  .upper-east-side img {
+  display: none;
+  }
+
+  .chelsea {
+    display: none;
+   }
+   
+   .chelsea img {
+   display: none;
+   }
+
+   .green-point {
+    display: none;
+   }
+   
+   .green-point img {
+   display: none;
+   }
+
+h2 {
+  text-align: center;
+}
+
+button {
+    padding: 0.5%;
+    background: inherit;
+    cursor: pointer;
+    outline: none;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    color: #443621;
+    border: 0.5px solid #443621;
+    font-size: 1rem;
+  }
+
+  #player {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    height: 80px;
+    background: #fff;
+    align-items: center;
+  }

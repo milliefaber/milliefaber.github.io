@@ -39,7 +39,11 @@ function gotAllDoors(err) {
 
   // call functions to log and show the doors
   consoleLogDoors();
+  try {
     showDoors();
+  } catch(err) {
+    console.error(err);
+  }
  }
 
 //  loop through the doors and console.log them
@@ -52,15 +56,27 @@ function gotAllDoors(err) {
 
 //  loop through the doors, create an a tag, img, and div for each one
 function showDoors() {
-console.log("showDoors()");
-doorsArray.forEach((door) => {
-
-    var doorImage = document.createElement("img");
-    doorImage.src = door.fields.image[0].url;
-    document.querySelector(".door-img").append(doorImage);
-    document.body.append(doorImage);
-});
+  console.log("showDoors()");
+  doors.forEach((door) => {
+      var doorImage = document.createElement("img");
+      doorImage.src = door.fields.image[0].url;
+      // document.querySelector(".door-img").append(doorImage);
+      // document.body.append(doorImage);
+      var containerClass = '.' + door.fields.neighborhood.toLowerCase().replace(' ', '-').replace(' ', '-');
+      // console.log(containerClass);
+      // CREATE CONTAINER LINKS
+      document.querySelector(containerClass).append(doorImage);
+  });
 }
+
+function showClickToKnock() {
+  console.log("showClickToKnock()");
+  knock.forEach((div) => {
+      var clickToKnock = document.createElement("div");
+      doorImage.src = door.fields.image[0].url;
+  });
+}
+
   
          
     // create elements
