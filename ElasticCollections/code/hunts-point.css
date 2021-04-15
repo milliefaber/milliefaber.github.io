@@ -72,28 +72,28 @@ h1 {
    display: none;
    }
 
-h2 {
-  text-align: center;
-}
-
-button {
-    padding: 0.5%;
-    background: inherit;
-    cursor: pointer;
-    outline: none;
-    align-items: center;
-    top: 50%;
-    left: 50%;
-    color: #443621;
-    border: 0.5px solid #443621;
-    font-size: 1rem;
+   h2 {
+    text-align: center;
   }
-
-  #player {
-    position: relative;
-    width: 90%;
-    max-width: 500px;
-    height: 80px;
-    background: #fff;
-    align-items: center;
-  }
+  
+  button {
+      margin: 2%;
+      background: inherit;
+      cursor: pointer;
+      outline: none;
+      align-items: center;
+      top: 50%;
+      left: 50%;
+      color: #443621;
+      border: 0.5px solid #91FF04;
+      font-size: 3.25rem;
+    }
+  
+    #player {
+      position: relative;
+      width: 90%;
+      max-width: 4rem;
+      height: 1rem;
+      background: #fff;
+      align-items: center;
+    }
