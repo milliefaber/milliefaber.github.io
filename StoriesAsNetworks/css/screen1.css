@@ -1,0 +1,310 @@
+/*css: cascading stylesheet*/
+
+@font-face {
+    font-family: bennet-banner;
+    src: url("https://use.typekit.net/yfw3hof.css");
+  }
+
+  body {
+    animation: colorchange 360s linear 1s infinite; /* animation-name followed by duration in seconds*/
+       /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchange 360s linear 0s infinite; /* Chrome and Safari */
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+  
+  p {
+    font-family: bennet-banner, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 70pt;
+    line-height: 74pt;
+    text-align: justify;
+   filter: blur(4.5px);
+    margin-left: 0.3em;
+    margin-right: 0.315em;
+    animation: colorchangetext 360s linear 1s infinite;
+    -webkit-animation: colorchangetext 360s linear 0s infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+  p:hover {
+    font-family: bennet-banner, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 70pt;
+    line-height: 74pt;
+    text-align: justify;
+    filter: blur(3px); 
+    margin-left: 0.3em;
+    margin-right: 0.315em;
+  }
+
+  h1 {
+    position: relative;
+    font-family: bennet-banner, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 96pt;
+    text-align: left;
+    color: #d380a0;
+    filter: blur(6px);
+    margin-left: 0.25em;
+    margin-right: 0.15em;
+    animation: colorchangetext 360s linear 1s infinite;
+    -webkit-animation: colorchangetext 360s linear 0s infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+  h1:hover {
+    position: relative;
+    font-family: bennet-banner, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 96pt;
+    text-align: left;
+    color: #D687A6;
+    filter: blur(3px); 
+    margin-left: 0.25em;
+    margin-right: 0.15em;
+  }
+
+  :root {
+  cursor: none;
+}
+:root:before {
+  content: '';
+  display: block;
+  width: 8500%;
+  height: 8500%;
+  position: fixed;
+  pointer-events: none;
+  animation: colorchangecursor 360s linear 1s infinite;
+  -webkit-animation: colorchangecursor 360s linear 0s infinite;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+#myBtn {
+  position: fixed;
+}
+
+/* The Modal (background) */
+.modal {
+ position: fixed; /* Stay in place */
+ z-index: 1; /* Sit on top */
+ left: 0;
+ top: 0;
+ width: 100%; /* Full width */
+ height: 100%; /* Full height */
+ overflow: auto; /* Enable scroll if needed */
+ background-color: rgb(0,0,0); /* Fallback color */
+ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ cursor: default;
+}
+
+/* Modal Content/Box */
+.modal-content {
+ background-color: #fefefe;
+ margin-left: 12%; /* 15% from the top and centered */
+ margin-top: 12%;
+ padding: 2.5%;
+ border: 6px solid rgb(255, 255, 255);
+ width: 54%; /* Could be more or less, depending on screen size */
+ height: 45%;
+ animation: colorchange 360s linear 1s infinite;
+ -webkit-animation: colorchange 360s linear 0s infinite;
+ animation-timing-function: ease-in-out;
+ -webkit-animation-timing-function: ease-in-out;
+}
+
+h2 {
+  position: relative;
+  font-family: bennet-banner, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 5.25rem;
+  line-height: 64pt;
+  text-align: left;
+  color: #ffffff;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  margin-top: .1em;
+  margin-bottom: none;
+}
+
+/* The Close Button */
+h3 {
+ color: rgb(255, 255, 255);
+ margin-left: 0.1em;
+margin-right: 0.1em;
+ text-align: justify;
+ font-size: 2rem;
+ font-family: bennet-banner;
+ font-weight: 400;
+ font-style: italic;
+ letter-spacing: 0.1rem;
+ margin-top: .1em;
+}
+
+.close {
+  color: rgb(255, 255, 255);
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+  font-size: 3rem;
+  font-family: bennet-banner;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  line-height: 70pt;
+ }
+
+.close:hover,
+.close:focus {
+ color: rgb(255, 255, 255);
+ text-decoration: none;
+ cursor: pointer;
+ text-shadow: 0 0 32px rgb(255, 255, 255);
+}
+
+@keyframes colorchange
+  {
+    0%   {background: #ffc3d8;}
+    20%  {background: #838238;}
+    50%  {background: #141414fc;}
+    80%  {background: #666666;}
+    100% {background: #E1A4B9;}
+ }
+
+  @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+  {
+    0%   {background: #ffc3d8;}
+    20%  {background: #838238;}
+    50%  {background: #141414fc;}
+    80%  {background: #666666;}
+    100% {background: #E1A4B9;}
+ }
+ 
+ @keyframes colorchangetext
+  {
+    0%   {color: #ffa7ca;}
+    20%  {color: #67772d;}
+    50%  {color: #221d15;}
+    80%  {color: #707070;}
+    100% {color: #D687A6;}
+ }
+
+ @-webkit-keyframes colorchangetext
+ {
+  0%   {color: #ffa7ca;}
+  20%  {color: #67772d;}
+  50%  {color: #221d15;}
+  80%  {color: #707070;}
+  100% {color: #D687A6;}
+}
+
+
+@keyframes colorchangecursor
+  {
+    0%   {background: radial-gradient(
+      circle 15vmax at var(--cursorX) var(--cursorY),
+      rgba(255, 238, 244, 0.775) 0%,
+      rgba(255, 238, 244, 0.70) 15%,
+      rgba(255, 238, 244, 0.60) 30%,
+      rgba(255, 238, 244, 0.40) 50%,
+      rgba(255, 238, 244, 0.20) 70%,
+      rgba(255, 238, 244, 0) 100%
+    );}
+    20%  {background: radial-gradient(
+      circle 15vmax at var(--cursorX) var(--cursorY),
+      rgba(255, 253, 143, 0.719) 0%,
+      rgba(255, 253, 143, 0.637) 5%,
+      rgba(255, 253, 143, 0.541) 15%,
+      rgba(255, 253, 143, 0.40) 30%,
+      rgba(255, 253, 143, 0.20) 60%,
+      rgba(255, 253, 143, 0) 100%
+    );}
+    50%  {background: radial-gradient(
+      circle 15vmax at var(--cursorX) var(--cursorY),
+      rgba(255, 208, 120, 0.775) 0%, 
+      rgba(255, 208, 120, 0.70) 5%,
+      rgba(255, 208, 120, 0.60) 15%,
+      rgba(255, 208, 120, 0.40) 30%,
+      rgba(255, 208, 120, 0.20) 60%,
+      rgba(255, 208, 120, 0) 100%
+    );}
+    80%  {background: radial-gradient(
+      circle 15vmax at var(--cursorX) var(--cursorY),
+      rgba(255, 255, 255, 0.775) 0%,
+      rgba(255, 255, 255, 0.70) 5%,
+      rgba(246, 252, 255, 0.6) 15%,
+      rgba(255, 255, 255, 0.40) 30%,
+      rgba(255, 255, 255, 0.20) 60%,
+      rgba(255, 255, 255, 0) 100%
+    );}
+    100% {background: radial-gradient(
+      circle 15vmax at var(--cursorX) var(--cursorY),
+      rgba(241, 249, 255, 0.775) 0%,
+      rgba(241, 249, 255, 0.70) 5%,
+      rgba(241, 249, 255, 0.60) 15%,
+      rgba(241, 249, 255, 0.40) 30%,
+      rgba(241, 249, 255, 0.20) 60%,
+      rgba(241, 249, 255, 0) 100%
+    );}
+ }
+
+/* @keyframes colorchangecursor
+{
+  0%  {background: radial-gradient(
+    circle 15vmax at var(--cursorX) var(--cursorY),
+    rgba(225, 164, 185,.025) 0%,
+    rgba(225, 164, 185,.05) 10%,
+    rgba(225, 164, 185,.1) 20%,
+    rgba(225, 164, 185,.15) 30%,
+    rgba(225, 164, 185,.18) 40%,
+    rgb(216, 146, 174,.99) 100%
+  );}
+  20%  {background: radial-gradient(
+    circle 15vmax at var(--cursorX) var(--cursorY),
+    rgba(131, 130, 56,.025) 0%,
+    rgba(131, 130, 56,.05) 10%,
+    rgba(131, 130, 56,.1) 20%,
+    rgba(131, 130, 56,.15) 30%,
+    rgba(131, 130, 56,.18) 40%,
+    rgba(131, 130, 56,.99) 100%
+  );}
+  50%  {background: radial-gradient(
+    circle 15vmax at var(--cursorX) var(--cursorY),
+    rgba(5, 5, 4,.025) 0%,
+    rgba(5, 5, 4,.05) 10%,
+    rgba(5, 5, 4,.1) 20%,
+    rgba(5, 5, 4,.15) 30%,
+    rgba(5, 5, 4,.18) 40%,
+    rgba(5, 5, 4, 0.988) 100%
+  );}
+  80%  {background: radial-gradient(
+    circle 15vmax at var(--cursorX) var(--cursorY),
+    rgba(102, 102, 102,.025) 0%,
+    rgba(102, 102, 102,.05) 10%,
+    rgba(102, 102, 102,.1) 20%,
+    rgba(102, 102, 102,.15) 30%,
+    rgba(102, 102, 102,.18) 40%,
+    rgb(102, 102, 102,.99) 100%
+  );}
+  90%  {background: radial-gradient(
+    circle 15vmax at var(--cursorX) var(--cursorY),
+    rgba(225, 164, 185,.025) 0%,
+    rgba(225, 164, 185,.05) 10%,
+    rgba(225, 164, 185,.1) 20%,
+    rgba(225, 164, 185,.15) 30%,
+    rgba(225, 164, 185,.18) 40%,
+    rgb(216, 146, 174,.99) 100%
+  );}
+}
+
+
+
