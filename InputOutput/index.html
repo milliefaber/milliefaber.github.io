@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOTD GENERATOR</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <h1>OOTD GENERATOR</h1>
+
+<div class="float-container">
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <div class="seasonbar">
+    <a class="prev" onclick="plusSeasonSlides(-1)">▲</a>
+    <div class="mySlides1 fade">
+      <img src="spring.png">
+    </div>
+  
+    <div class="mySlides1 fade">
+      <img src="summer.png">
+    </div>
+  
+    <div class="mySlides1 fade">
+      <img src="autumn.png">
+    </div>
+
+    <div class="mySlides1 fade">
+        <img src="winter.png">
+      </div>
+    <a class="next" onclick="plusSeasonSlides(1)">▲</a>
+    </div>
+
+    <div class="moodbar">
+        <a class="prev" onclick="plusMoodSlides(-1)">▲</a>
+        <div class="mySlides2 fade">
+          <img src="mood1.png">
+        </div>
+      
+        <div class="mySlides2 fade">
+          <img src="mood2.png">
+        </div>
+      
+        <div class="mySlides2 fade">
+          <img src="mood3.png">
+        </div>
+        <a class="next" onclick="plusMoodSlides(1)">▲</a>
+    </div>
+
+    <div class="colorbar">
+        <a class="prev" onclick="plusColorSlides(-1)">▲</a>
+        <div class="mySlides3 fade">
+            <img src="brights.png">
+          </div>
+
+        <div class="mySlides3 fade">
+          <img src="neutrals.png">
+        </div>
+      
+        <div class="mySlides3 fade">
+          <img src="pastels.png">
+        </div>
+        <a class="next" onclick="plusColorSlides(1)">▲</a>
+    </div>
+
+  </div>
+
+  <div class="outfitviewer"> 
+      <img src="prereveal.png" id="outfit">
+      <input type="button" id="revealbutton" onclick="changeImage()" value="reveal the fit!" />
+  </div>
+
+</div>
+    
+ <script src="main.js"></script>
+</body>
+</html>
